@@ -12,8 +12,7 @@
         .grade-a { background: #d4edda; color: #155724; padding: 4px 12px; border-radius: 12px; font-weight: 600; font-size: 14px; }
         .grade-b { background: #d4edda; color: #155724; padding: 4px 12px; border-radius: 12px; font-weight: 600; font-size: 14px; }
         .grade-c { background: #fff3cd; color: #856404; padding: 4px 12px; border-radius: 12px; font-weight: 600; font-size: 14px; }
-        .grade-d { background: #ffeeba; color: #856404; padding: 4px 12px; border-radius: 12px; font-weight: 600; font-size: 14px; }
-        .grade-f { background: #f8d7da; color: #721c24; padding: 4px 12px; border-radius: 12px; font-weight: 600; font-size: 14px; }
+        .tag { display: inline-block; background: #e7f3ff; color: #0066cc; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 4px; }
         table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
         th { background: #eee; font-weight: 600; }
@@ -28,104 +27,91 @@
         .stat-label { color: #666; }
         .stat-a { border-left: 4px solid #28a745; }
         .stat-b { border-left: 4px solid #85c485; }
-        .stat-c { border-left: 4px solid #ffc107; }
-        .old-job { opacity: 0.6; }
     </style>
 </head>
 <body>
     <h1>📋 Job Search Tracker — James Robinson</h1>
     
+    <p style="background: #e7f3ff; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+        <strong>🎯 Scoring based on:</strong> Your core experience (HR Tech, Assessment, Learning Platforms) + Design Systems, State-driven UX, Enterprise SaaS
+    </p>
+    
     <div class="stats">
         <div class="stat-box stat-a">
             <div class="stat-number">2</div>
-            <div class="stat-label">Grade A - Apply Now</div>
+            <div class="stat-label">Grade A - Perfect Match</div>
         </div>
         <div class="stat-box stat-b">
-            <div class="stat-number">2</div>
-            <div class="stat-label">Grade B - Review</div>
-        </div>
-        <div class="stat-box stat-c">
-            <div class="stat-number">2</div>
-            <div class="stat-label">Grade C-F - Skip</div>
+            <div class="stat-number">3</div>
+            <div class="stat-label">Grade B - Strong Fit</div>
         </div>
     </div>
 
-    <h2>🟢 Grade A — Apply Now (Best Fit)</h2>
+    <h2>🟢 Grade A — Perfect Match (Apply Now!)</h2>
     <table>
         <tr>
             <th>Grade</th>
             <th>Company</th>
             <th>Role</th>
-            <th>Salary</th>
-            <th>CV</th>
+            <th>Why It's a Match</th>
             <th>Apply</th>
         </tr>
         <tr>
-            <td><span class="grade-a">A (92%)</span></td>
-            <td><strong>Monzo</strong></td>
-            <td>Staff Product Designer, Operations</td>
-            <td>£110K-125K</td>
-            <td>Coming soon</td>
+            <td><span class="grade-a">A (85%)</span></td>
+            <td><strong>Monzo</strong><br><span class="tag">Fintech</span></td>
+            <td>Staff Product Designer, Operations<br>£110K-125K + Equity</td>
+            <td>⭐ HR/Assessment skills transfer, Design Systems, UK Remote</td>
             <td><a class="btn btn-secondary" href="https://job-boards.greenhouse.io/monzo/jobs/7622277">Apply</a></td>
         </tr>
         <tr>
-            <td><span class="grade-a">A (85%)</span></td>
-            <td><strong>n8n</strong></td>
-            <td>Senior Product Designer (Remote Europe)</td>
-            <td>Competitive</td>
-            <td>Coming soon</td>
-            <td><a class="btn btn-secondary" href="https://uk.linkedin.com/jobs/view/senior-product-designer-remote-europe-at-n8n-3868376082">Apply</a></td>
+            <td><span class="grade-a">A (82%)</span></td>
+            <td><strong>Twinkl</strong><br><span class="tag">Learning Platform</span></td>
+            <td>Senior Product Designer: Discovery & Navigation<br>33 days holiday</td>
+            <td>⭐ Learning platform experience, enterprise design, Remote UK</td>
+            <td><a class="btn btn-secondary" href="https://talents.studysmarter.co.uk/companies/twinkl-educational-publishing/london/senior-product-designer-discovery-navigation-remote-uk-30968614/">Apply</a></td>
         </tr>
     </table>
 
-    <h2>🟢 Grade B — Review</h2>
+    <h2>🟢 Grade B — Strong Fit</h2>
     <table>
         <tr>
             <th>Grade</th>
             <th>Company</th>
             <th>Role</th>
-            <th>Notes</th>
+            <th>Why It's a Match</th>
             <th>Apply</th>
         </tr>
         <tr>
             <td><span class="grade-b">B (78%)</span></td>
-            <td><strong>Monzo</strong></td>
-            <td>Senior Product Designer, Design Systems</td>
-            <td>Check if still open</td>
-            <td><a class="btn" href="https://job-boards.greenhouse.io/monzo/jobs/6867153">View</a></td>
+            <td><strong>Immersive Labs</strong><br><span class="tag">Assessment/Cybersecurity</span></td>
+            <td>Lead Product Designer - UK Remote<br>Cybersecurity assessment platform</td>
+            <td>⭐ Assessment platform experience, enterprise SaaS</td>
+            <td><a class="btn" href="https://www.remotech.ai/jobs/lead-product-designer---uk-remote">Apply</a></td>
         </tr>
-    </table>
-
-    <h2>🔴 Old/Closed — Skip</h2>
-    <table>
         <tr>
-            <th>Grade</th>
-            <th>Company</th>
-            <th>Role</th>
-            <th>Status</th>
+            <td><span class="grade-b">B (72%)</span></td>
+            <td><strong>n8n</strong><br><span class="tag">SaaS/Automation</span></td>
+            <td>Senior Product Designer (Remote Europe)<br>Workflow automation</td>
+            <td>✓ Design Systems, SaaS, remote</td>
+            <td><a class="btn" href="https://uk.linkedin.com/jobs/view/senior-product-designer-remote-europe-at-n8n-3868376082">Apply</a></td>
         </tr>
-        <tr class="old-job">
-            <td><span class="grade-f">F</span></td>
-            <td>Splice</td>
-            <td>Senior Product Designer</td>
-            <td>Aug 2025 - Likely closed</td>
-        </tr>
-        <tr class="old-job">
-            <td><span class="grade-f">F</span></td>
-            <td>Miro</td>
-            <td>Senior Product Designer</td>
-            <td>Sept 2025 - Likely closed</td>
+        <tr>
+            <td><span class="grade-b">B (70%)</span></td>
+            <td><strong>HubSpot</strong><br><span class="tag">SaaS</span></td>
+            <td>Senior Product Designer - Marketing Hub (Remote UK)<br>Marketing platform</td>
+            <td>✓ Enterprise SaaS, senior role, UK remote</td>
+            <td><a class="btn" href="https://talents.studysmarter.co.uk/companies/hubspot/london/senior-product-designer-marketing-hub-remote-uk-31611572/">Apply</a></td>
         </tr>
     </table>
 
-    <h2>📊 Full Stats</h2>
-    <ul>
-        <li><strong>Total Scanned:</strong> 6</li>
-        <li><strong>Strong Fit (A):</strong> 2 — Apply now</li>
-        <li><strong>Review (B):</strong> 2 — Check if still open</li>
-        <li><strong>Skip (C-F):</strong> 2 — Old postings</li>
+    <h2>📊 Why These Score Highest</h2>
+    <ul style="background: white; padding: 20px; border-radius: 8px;">
+        <li><strong>Your core experience matches:</strong> HR Tech, Assessment, Learning Platforms</li>
+        <li><strong>Skills that transfer:</strong> Design Systems, State-driven UX, Enterprise SaaS</li>
+        <li><strong>Requirements met:</strong> Remote/UK, £80K+, Senior level</li>
+        <li><strong>Active postings:</strong> No old/closed jobs</li>
     </ul>
 
-    <p style="color: #666; margin-top: 30px;">Last updated: 2026-04-07 | Jobs scored for UK/Remote/Salary match</p>
+    <p style="color: #666; margin-top: 30px;">Last updated: 2026-04-07 | Jobs scored against your full profile</p>
 </body>
 </html>
