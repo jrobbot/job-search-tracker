@@ -9,6 +9,11 @@
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 1200px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
         h1 { background: #1a1a2e; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
         h2 { color: #1a1a2e; margin: 30px 0 15px; padding-bottom: 10px; border-bottom: 2px solid #ddd; }
+        .grade-a { background: #d4edda; color: #155724; padding: 4px 12px; border-radius: 12px; font-weight: 600; font-size: 14px; }
+        .grade-b { background: #d4edda; color: #155724; padding: 4px 12px; border-radius: 12px; font-weight: 600; font-size: 14px; }
+        .grade-c { background: #fff3cd; color: #856404; padding: 4px 12px; border-radius: 12px; font-weight: 600; font-size: 14px; }
+        .grade-d { background: #ffeeba; color: #856404; padding: 4px 12px; border-radius: 12px; font-weight: 600; font-size: 14px; }
+        .grade-f { background: #f8d7da; color: #721c24; padding: 4px 12px; border-radius: 12px; font-weight: 600; font-size: 14px; }
         table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
         th { background: #eee; font-weight: 600; }
@@ -17,41 +22,38 @@
         .btn:hover { background: #0052a3; }
         .btn-secondary { background: #28a745; }
         .btn-secondary:hover { background: #218838; }
-        .btn-linkedin { background: #0077b5; }
-        .btn-linkedin:hover { background: #005885; }
         .stats { display: flex; gap: 20px; margin: 20px 0; }
         .stat-box { flex: 1; background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         .stat-number { font-size: 36px; font-weight: 700; color: #1a1a2e; }
         .stat-label { color: #666; }
-        .linkedin-tag { background: #0077b5; color: white; padding: 2px 8px; border-radius: 4px; font-size: 11px; margin-left: 8px; }
-        .last-updated { color: #666; font-size: 14px; text-align: center; margin-top: 30px; }
+        .stat-a { border-left: 4px solid #28a745; }
+        .stat-b { border-left: 4px solid #85c485; }
+        .stat-c { border-left: 4px solid #ffc107; }
+        .old-job { opacity: 0.6; }
     </style>
 </head>
 <body>
     <h1>📋 Job Search Tracker — James Robinson</h1>
     
     <div class="stats">
-        <div class="stat-box">
-            <div class="stat-number">25</div>
-            <div class="stat-label">Pending</div>
+        <div class="stat-box stat-a">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Grade A - Apply Now</div>
         </div>
-        <div class="stat-box">
-            <div class="stat-number">0</div>
-            <div class="stat-label">Applied</div>
+        <div class="stat-box stat-b">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Grade B - Review</div>
         </div>
-        <div class="stat-box">
-            <div class="stat-number">0</div>
-            <div class="stat-label">Interviews</div>
-        </div>
-        <div class="stat-box">
-            <div class="stat-number">0</div>
-            <div class="stat-label">Offers</div>
+        <div class="stat-box stat-c">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Grade C-F - Skip</div>
         </div>
     </div>
 
-    <h2>⭐ Top Picks — Ready to Apply</h2>
+    <h2>🟢 Grade A — Apply Now (Best Fit)</h2>
     <table>
         <tr>
+            <th>Grade</th>
             <th>Company</th>
             <th>Role</th>
             <th>Salary</th>
@@ -59,56 +61,71 @@
             <th>Apply</th>
         </tr>
         <tr>
-            <td><strong>Mercury</strong></td>
-            <td>Senior Product Designer – Mobile</td>
-            <td>$189K-236K</td>
-            <td><a class="btn" href="mercury-senior-product-designer.pdf">📄 CV</a></td>
-            <td><a class="btn btn-secondary" href="https://job-boards.greenhouse.io/mercury/jobs/5843845004">Apply</a></td>
+            <td><span class="grade-a">A (92%)</span></td>
+            <td><strong>Monzo</strong></td>
+            <td>Staff Product Designer, Operations</td>
+            <td>£110K-125K</td>
+            <td>Coming soon</td>
+            <td><a class="btn btn-secondary" href="https://job-boards.greenhouse.io/monzo/jobs/7622277">Apply</a></td>
         </tr>
         <tr>
-            <td><strong>Remote</strong></td>
-            <td>Senior Product Designer</td>
-            <td>£80K+</td>
-            <td><a class="btn" href="remote-senior-product-designer.pdf">📄 CV</a></td>
-            <td><a class="btn btn-secondary" href="https://job-boards.greenhouse.io/remotecom/jobs/6582908003">Apply</a></td>
-        </tr>
-        <tr>
-            <td><strong>Check</strong></td>
-            <td>Senior Product Designer</td>
-            <td>£80K+</td>
-            <td><a class="btn" href="check-senior-product-designer.pdf">📄 CV</a></td>
-            <td><a class="btn btn-secondary" href="https://job-boards.greenhouse.io/check/jobs/5825315004">Apply</a></td>
-        </tr>
-        <tr>
-            <td><strong>Metabase</strong></td>
-            <td>Product Designer</td>
-            <td>£70K+</td>
-            <td><a class="btn" href="metabase-product-designer.pdf">📄 CV</a></td>
-            <td><a class="btn btn-secondary" href="https://jobs.lever.co/metabase/b6ab96a1-5d3f-4e5b-a611-5a79d333d62f">Apply</a></td>
+            <td><span class="grade-a">A (85%)</span></td>
+            <td><strong>n8n</strong></td>
+            <td>Senior Product Designer (Remote Europe)</td>
+            <td>Competitive</td>
+            <td>Coming soon</td>
+            <td><a class="btn btn-secondary" href="https://uk.linkedin.com/jobs/view/senior-product-designer-remote-europe-at-n8n-3868376082">Apply</a></td>
         </tr>
     </table>
 
-    <h2>📋 All Pending Jobs (25)</h2>
+    <h2>🟢 Grade B — Review</h2>
     <table>
         <tr>
-            <th>#</th>
+            <th>Grade</th>
             <th>Company</th>
             <th>Role</th>
-            <th>Source</th>
-            <th>Job Link</th>
+            <th>Notes</th>
+            <th>Apply</th>
         </tr>
-        <tr><td>1</td><td>Mercury</td><td>Senior Product Designer – Mobile</td><td>Greenhouse</td><td><a href="https://job-boards.greenhouse.io/mercury/jobs/5843845004">Link</a></td></tr>
-        <tr><td>2</td><td>Remote</td><td>Senior Product Designer</td><td>Greenhouse</td><td><a href="https://job-boards.greenhouse.io/remotecom/jobs/6582908003">Link</a></td></tr>
-        <tr><td>3</td><td>Check</td><td>Senior Product Designer</td><td>Greenhouse</td><td><a href="https://job-boards.greenhouse.io/check/jobs/5825315004">Link</a></td></tr>
-        <tr><td>4</td><td>Metabase</td><td>Product Designer</td><td>Lever</td><td><a href="https://jobs.lever.co/metabase/b6ab96a1-5d3f-4e5b-a611-5a79d333d62f">Link</a></td></tr>
-        <tr><td>5</td><td>ezCater</td><td>Senior Product Designer, Growth</td><td>Greenhouse</td><td><a href="https://job-boards.greenhouse.io/ezcaterinc/jobs/5022839007">Link</a></td></tr>
-        <tr><td>6</td><td>Vinterior</td><td>Senior Product Designer</td><td><span class="linkedin-tag">LinkedIn</span></td><td><a class="btn btn-linkedin" href="https://uk.linkedin.com/jobs/view/senior-product-designer-remote-at-vinterior-3519707210">Apply</a></td></tr>
-        <tr><td>7</td><td>Humanitec</td><td>Senior Product Designer</td><td><span class="linkedin-tag">LinkedIn</span></td><td><a class="btn btn-linkedin" href="https://uk.linkedin.com/jobs/view/senior-product-designer-fully-remote-at-humanitec-3357002229">Apply</a></td></tr>
-        <tr><td>8</td><td>Dune</td><td>Senior Product Designer</td><td><span class="linkedin-tag">LinkedIn</span></td><td><a class="btn btn-linkedin" href="https://uk.linkedin.com/jobs/view/senior-product-designer-fully-remote-europe-us-at-dune-3644932719">Apply</a></td></tr>
-        <tr><td>9</td><td>n8n</td><td>Senior Product Designer</td><td><span class="linkedin-tag">LinkedIn</span></td><td><a class="btn btn-linkedin" href="https://uk.linkedin.com/jobs/view/senior-product-designer-remote-europe-at-n8n-3868376082">Apply</a></td></tr>
-        <tr><td>10</td><td>Wise</td><td>Senior Product Designer</td><td><span class="linkedin-tag">LinkedIn</span></td><td><a class="btn btn-linkedin" href="https://uk.linkedin.com/jobs/view/senior-product-designer-trust-at-wise-3798843203">Apply</a></td></tr>
+        <tr>
+            <td><span class="grade-b">B (78%)</span></td>
+            <td><strong>Monzo</strong></td>
+            <td>Senior Product Designer, Design Systems</td>
+            <td>Check if still open</td>
+            <td><a class="btn" href="https://job-boards.greenhouse.io/monzo/jobs/6867153">View</a></td>
+        </tr>
     </table>
 
-    <p class="last-updated">Last updated: 2026-04-07 | 25 jobs in pipeline</p>
+    <h2>🔴 Old/Closed — Skip</h2>
+    <table>
+        <tr>
+            <th>Grade</th>
+            <th>Company</th>
+            <th>Role</th>
+            <th>Status</th>
+        </tr>
+        <tr class="old-job">
+            <td><span class="grade-f">F</span></td>
+            <td>Splice</td>
+            <td>Senior Product Designer</td>
+            <td>Aug 2025 - Likely closed</td>
+        </tr>
+        <tr class="old-job">
+            <td><span class="grade-f">F</span></td>
+            <td>Miro</td>
+            <td>Senior Product Designer</td>
+            <td>Sept 2025 - Likely closed</td>
+        </tr>
+    </table>
+
+    <h2>📊 Full Stats</h2>
+    <ul>
+        <li><strong>Total Scanned:</strong> 6</li>
+        <li><strong>Strong Fit (A):</strong> 2 — Apply now</li>
+        <li><strong>Review (B):</strong> 2 — Check if still open</li>
+        <li><strong>Skip (C-F):</strong> 2 — Old postings</li>
+    </ul>
+
+    <p style="color: #666; margin-top: 30px;">Last updated: 2026-04-07 | Jobs scored for UK/Remote/Salary match</p>
 </body>
 </html>
