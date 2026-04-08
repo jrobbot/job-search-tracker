@@ -10,23 +10,25 @@
         .container { max-width: 100%; padding: 16px; }
         h1 { background: #1a1a2e; color: white; padding: 16px; font-size: 20px; border-radius: 0; margin: 0 0 16px 0; }
         h2 { font-size: 18px; color: #1a1a2e; margin: 24px 0 12px 0; padding-bottom: 8px; border-bottom: 2px solid #ddd; }
+        h3 { font-size: 14px; color: #666; margin: 20px 0 8px 0; }
         .card { background: white; border-radius: 12px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-        .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+        .stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 16px; }
         .stat-box { background: white; padding: 16px; border-radius: 12px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
         .stat-number { font-size: 28px; font-weight: 700; color: #1a1a2e; }
         .stat-label { font-size: 12px; color: #666; }
         .grade-a { background: #d4edda; color: #155724; padding: 4px 10px; border-radius: 12px; font-weight: 600; font-size: 13px; }
         .grade-b { background: #d4edda; color: #155724; padding: 4px 10px; border-radius: 12px; font-weight: 600; font-size: 13px; }
+        .grade-c { background: #fff3cd; color: #856404; padding: 4px 10px; border-radius: 12px; font-weight: 600; font-size: 13px; }
         .job-card { background: white; border-radius: 12px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
         .job-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
         .job-company { font-weight: 700; font-size: 16px; color: #1a1a2e; }
         .job-role { font-size: 14px; color: #555; margin: 4px 0; }
         .job-salary { font-size: 14px; font-weight: 600; color: #28a745; }
         .tag { display: inline-block; background: #e7f3ff; color: #0066cc; padding: 2px 8px; border-radius: 4px; font-size: 11px; margin-right: 4px; }
-        .btn { display: inline-block; padding: 10px 16px; background: #0066cc; color: white; text-decoration: none; border-radius: 8px; font-size: 14px; text-align: center; width: 100%; }
+        .btn { display: inline-block; padding: 10px 16px; background: #0066cc; color: white; text-decoration: none; border-radius: 8px; font-size: 14px; text-align: center; }
         .btn-secondary { background: #28a745; }
-        .btn-group { display: flex; gap: 8px; margin-top: 12px; }
-        .btn-group .btn { flex: 1; }
+        .btn-small { padding: 6px 12px; font-size: 12px; }
+        .btn-group { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
         .match-reason { font-size: 13px; color: #666; margin-top: 8px; padding-top: 8px; border-top: 1px solid #eee; }
         .note { background: #e7f3ff; padding: 12px; border-radius: 8px; font-size: 14px; margin-bottom: 16px; }
         .small { font-size: 12px; color: #888; }
@@ -35,50 +37,48 @@
         @media (min-width: 768px) {
             .container { max-width: 900px; margin: 0 auto; padding: 20px; }
             h1 { padding: 20px; font-size: 24px; border-radius: 8px; margin-bottom: 20px; }
-            .stats { grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+            .stats { grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px; }
             .stat-number { font-size: 36px; }
             .job-card { padding: 20px; }
-            .btn-group { width: auto; }
-            .btn { width: auto; padding: 10px 20px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📋 Job Search Tracker — Apr 8, 2026 <span style="font-size:14px;opacity:0.8">🆕 Fresh Scan</span></h1>
+        <h1>📋 Job Search Tracker — Apr 8, 2026</h1>
         
         <div class="note">
-            <strong>🎯 Scoring:</strong> Your core experience (HR Tech, Assessment, Learning Platforms) + Design Systems + Enterprise SaaS
+            <strong>🎯 Scoring:</strong> Your core experience (HR Tech, Assessment, Learning) + Design Systems + Enterprise SaaS
         </div>
         
         <div class="stats">
             <div class="stat-box" style="border-left: 4px solid #28a745;">
                 <div class="stat-number">3</div>
-                <div class="stat-label">Grade A<br>Perfect Match</div>
+                <div class="stat-label">Grade A<br>Apply Now</div>
             </div>
             <div class="stat-box" style="border-left: 4px solid #85c485;">
                 <div class="stat-number">2</div>
                 <div class="stat-label">Grade B<br>Strong Fit</div>
             </div>
             <div class="stat-box" style="border-left: 4px solid #ccc;">
-                <div class="stat-number">5</div>
-                <div class="stat-label">New Today</div>
+                <div class="stat-number">6</div>
+                <div class="stat-label">Total<br>Jobs</div>
             </div>
         </div>
 
-        <h2>🟢 Grade A — Perfect Match <span class="new-tag">NEW</span></h2>
+        <h2>🟢 Grade A — Apply Now (3)</h2>
         
         <div class="job-card">
             <div class="job-header">
                 <div>
-                    <div class="job-company">Monzo <span class="new-tag">HOT</span></div>
+                    <div class="job-company">Monzo <span class="new-tag">TOP</span></div>
                     <div class="job-role">Staff Product Designer, Operations</div>
                 </div>
                 <span class="grade-a">A (85%)</span>
             </div>
             <div class="job-salary">£110K-125K + Equity</div>
             <span class="tag">Fintech</span> <span class="tag">Design Systems</span>
-            <div class="match-reason">⭐ HR/Assessment skills transfer, UK Remote</div>
+            <div class="match-reason">⭐ HR/Assessment transfer, UK Remote</div>
             <div class="btn-group">
                 <a class="btn btn-secondary" href="https://job-boards.greenhouse.io/monzo/jobs/7622277">Apply Now</a>
             </div>
@@ -94,7 +94,7 @@
             </div>
             <div class="job-salary">Competitive</div>
             <span class="tag">AI/Research</span> <span class="tag">Assessment</span>
-            <div class="match-reason">⭐ AI research platform + assessment experience</div>
+            <div class="match-reason">⭐ AI research + assessment experience</div>
             <div class="btn-group">
                 <a class="btn btn-secondary" href="https://job-boards.greenhouse.io/prolific/jobs/4831281101">Apply Now</a>
             </div>
@@ -109,14 +109,14 @@
                 <span class="grade-a">A (82%)</span>
             </div>
             <div class="job-salary">33 days holiday</div>
-            <span class="tag">Learning Platform</span> <span class="tag">Enterprise</span>
-            <div class="match-reason">⭐ Learning platform experience</div>
+            <span class="tag">Learning Platform</span>
+            <div class="match-reason">⭐ Your exact background!</div>
             <div class="btn-group">
                 <a class="btn btn-secondary" href="https://talents.studysmarter.co.uk/companies/twinkl-educational-publishing/london/senior-product-designer-discovery-navigation-remote-uk-30968614/">Apply</a>
             </div>
         </div>
 
-        <h2>🟢 Grade B — Strong Fit</h2>
+        <h2>🟢 Grade B — Strong Fit (2)</h2>
         
         <div class="job-card">
             <div class="job-header">
@@ -129,7 +129,7 @@
             <span class="tag">Assessment/Cybersecurity</span>
             <div class="match-reason">⭐ Assessment platform experience</div>
             <div class="btn-group">
-                <a class="btn" href="https://www.remotech.ai/jobs/lead-product-designer---uk-remote">View</a>
+                <a class="btn btn-small" href="https://www.remotech.ai/jobs/lead-product-designer---uk-remote">View & Apply</a>
             </div>
         </div>
         
@@ -144,12 +144,53 @@
             <span class="tag">SaaS/Automation</span>
             <div class="match-reason">✓ Design Systems, remote</div>
             <div class="btn-group">
-                <a class="btn" href="https://uk.linkedin.com/jobs/view/senior-product-designer-remote-europe-at-n8n-3868376082">View</a>
+                <a class="btn btn-small" href="https://uk.linkedin.com/jobs/view/senior-product-designer-remote-europe-at-n8n-3868376082">View</a>
             </div>
         </div>
 
-        <h2 style="margin-top:30px;font-size:14px;color:#888;">📋 Full list with CVs available in private repo</h2>
-        <p class="small" style="text-align: center; margin-top: 30px;">Last updated: Apr 8, 2026 07:42 UK</p>
+        <h2>📋 All Jobs (5 total)</h2>
+        
+        <div class="job-card">
+            <div class="job-header">
+                <div><div class="job-company">Monzo</div><div class="job-role">Staff Product Designer, Operations</div></div>
+                <span class="grade-a">A</span>
+            </div>
+            <div class="btn-group"><a class="btn btn-small btn-secondary" href="https://job-boards.greenhouse.io/monzo/jobs/7622277">Apply</a></div>
+        </div>
+        
+        <div class="job-card">
+            <div class="job-header">
+                <div><div class="job-company">Prolific</div><div class="job-role">Lead Product Designer</div></div>
+                <span class="grade-a">A</span>
+            </div>
+            <div class="btn-group"><a class="btn btn-small btn-secondary" href="https://job-boards.greenhouse.io/prolific/jobs/4831281101">Apply</a></div>
+        </div>
+        
+        <div class="job-card">
+            <div class="job-header">
+                <div><div class="job-company">Twinkl</div><div class="job-role">Senior Product Designer</div></div>
+                <span class="grade-a">A</span>
+            </div>
+            <div class="btn-group"><a class="btn btn-small btn-secondary" href="https://talents.studysmarter.co.uk/companies/twinkl-educational-publishing/london/senior-product-designer-discovery-navigation-remote-uk-30968614/">Apply</a></div>
+        </div>
+        
+        <div class="job-card">
+            <div class="job-header">
+                <div><div class="job-company">Immersive Labs</div><div class="job-role">Lead Product Designer</div></div>
+                <span class="grade-b">B</span>
+            </div>
+            <div class="btn-group"><a class="btn btn-small" href="https://www.remotech.ai/jobs/lead-product-designer---uk-remote">View</a></div>
+        </div>
+        
+        <div class="job-card">
+            <div class="job-header">
+                <div><div class="job-company">n8n</div><div class="job-role">Senior Product Designer</div></div>
+                <span class="grade-b">B</span>
+            </div>
+            <div class="btn-group"><a class="btn btn-small" href="https://uk.linkedin.com/jobs/view/senior-product-designer-remote-europe-at-n8n-3868376082">View</a></div>
+        </div>
+
+        <p class="small" style="text-align: center; margin-top: 30px;">Updated: Apr 8, 2026 | CVs available in private GitHub repo</p>
     </div>
 </body>
 </html>
