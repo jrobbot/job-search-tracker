@@ -9,59 +9,60 @@
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.5; background: #f5f5f5; color: #1a1a1a; }
         .container { max-width: 100%; padding: 16px; }
         h1 { background: #1a1a2e; color: white; padding: 16px; font-size: 20px; border-radius: 0; margin: 0 0 16px 0; }
-        h2 { font-size: 16px; color: #1a1a2e; margin: 20px 0 10px 0; padding-bottom: 6px; border-bottom: 2px solid #ddd; }
-        h3 { font-size: 14px; color: #666; }
+        h2 { font-size: 18px; color: #1a1a2e; margin: 24px 0 12px 0; padding-bottom: 8px; border-bottom: 2px solid #ddd; }
         .stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 16px; }
         .stat-box { background: white; padding: 16px; border-radius: 12px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
         .stat-number { font-size: 28px; font-weight: 700; color: #1a1a2e; }
         .stat-label { font-size: 12px; color: #666; }
-        .grade-a { background: #d4edda; color: #155724; padding: 4px 8px; border-radius: 10px; font-weight: 600; font-size: 12px; }
-        .grade-b { background: #d4edda; color: #155724; padding: 4px 8px; border-radius: 10px; font-weight: 600; font-size: 12px; }
-        .grade-c { background: #fff3cd; color: #856404; padding: 4px 8px; border-radius: 10px; font-weight: 600; font-size: 12px; }
-        .job-card { background: white; border-radius: 12px; padding: 14px; margin-bottom: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
-        .job-header { display: flex; justify-content: space-between; align-items: center; }
-        .job-company { font-weight: 700; font-size: 15px; }
-        .job-role { font-size: 13px; color: #555; }
-        .job-salary { font-size: 13px; font-weight: 600; color: #28a745; }
-        .tag { display: inline-block; background: #e7f3ff; color: #0066cc; padding: 2px 6px; border-radius: 4px; font-size: 10px; margin-right: 4px; }
-        .btn { display: inline-block; padding: 8px 14px; background: #0066cc; color: white; text-decoration: none; border-radius: 6px; font-size: 13px; }
+        .grade-a { background: #d4edda; color: #155724; padding: 4px 10px; border-radius: 12px; font-weight: 600; font-size: 13px; }
+        .grade-b { background: #d4edda; color: #155724; padding: 4px 10px; border-radius: 12px; font-weight: 600; font-size: 13px; }
+        .job-card { background: white; border-radius: 12px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .job-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+        .job-company { font-weight: 700; font-size: 16px; color: #1a1a2e; }
+        .job-role { font-size: 14px; color: #555; margin: 4px 0; }
+        .job-salary { font-size: 14px; font-weight: 600; color: #28a745; }
+        .tag { display: inline-block; background: #e7f3ff; color: #0066cc; padding: 2px 8px; border-radius: 4px; font-size: 11px; margin-right: 4px; }
+        .btn { display: inline-block; padding: 10px 16px; background: #0066cc; color: white; text-decoration: none; border-radius: 8px; font-size: 14px; }
         .btn-secondary { background: #28a745; }
-        .btn-small { padding: 6px 10px; font-size: 11px; }
-        .btn-group { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
-        .link-row { display: flex; gap: 10px; margin-top: 6px; }
-        .link-row a { font-size: 12px; color: #0066cc; }
+        .btn-small { padding: 6px 12px; font-size: 12px; }
+        .btn-group { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+        .match-reason { font-size: 13px; color: #666; margin-top: 8px; padding-top: 8px; border-top: 1px solid #eee; }
         .note { background: #e7f3ff; padding: 12px; border-radius: 8px; font-size: 14px; margin-bottom: 16px; }
         .small { font-size: 12px; color: #888; }
+        .new-tag { background: #28a745; color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; margin-left: 8px; }
+        .link-row { display: flex; gap: 12px; margin-top: 8px; flex-wrap: wrap; }
+        .link-row a { font-size: 13px; color: #0066cc; text-decoration: none; }
+        .link-row a:hover { text-decoration: underline; }
         
         @media (min-width: 768px) {
             .container { max-width: 900px; margin: 0 auto; padding: 20px; }
             h1 { padding: 20px; font-size: 24px; border-radius: 8px; margin-bottom: 20px; }
             .stats { grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px; }
             .stat-number { font-size: 36px; }
-            .job-card { padding: 16px; }
+            .job-card { padding: 20px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📋 Job Search Tracker — Apr 8, 2026</h1>
+        <h1>📋 Job Search Tracker — Apr 8, 2026 <span class="new-tag">🆕 10 Jobs</span></h1>
         
         <div class="note">
-            <strong>🎯 All jobs:</strong> HR Tech, Assessment, Learning, Design Systems, Enterprise SaaS | Remote UK
+            <strong>🎯 Scoring:</strong> Your core experience (HR Tech, Assessment, Learning) + Design Systems + Enterprise SaaS
         </div>
         
         <div class="stats">
             <div class="stat-box" style="border-left: 4px solid #28a745;">
                 <div class="stat-number">4</div>
-                <div class="stat-label">Grade A</div>
+                <div class="stat-label">Grade A<br>Apply Now</div>
             </div>
             <div class="stat-box" style="border-left: 4px solid #85c485;">
                 <div class="stat-number">4</div>
-                <div class="stat-label">Grade B</div>
+                <div class="stat-label">Grade B<br>Strong Fit</div>
             </div>
             <div class="stat-box" style="border-left: 4px solid #ccc;">
-                <div class="stat-number">17</div>
-                <div class="stat-label">Total</div>
+                <div class="stat-number">10</div>
+                <div class="stat-label">Total<br>Jobs</div>
             </div>
         </div>
 
@@ -70,15 +71,20 @@
         <div class="job-card">
             <div class="job-header">
                 <div>
-                    <div class="job-company">Monzo</div>
-                    <div class="job-role">Staff Product Designer, Operations • £110K-125K</div>
+                    <div class="job-company">Monzo <span class="new-tag">TOP PICK</span></div>
+                    <div class="job-role">Staff Product Designer, Operations</div>
                 </div>
-                <span class="grade-a">A</span>
+                <span class="grade-a">A (85%)</span>
             </div>
+            <div class="job-salary">£110K-125K + Equity</div>
+            <span class="tag">Fintech</span> <span class="tag">Design Systems</span>
+            <div class="match-reason">⭐ HR/Assessment skills transfer, UK Remote</div>
             <div class="link-row">
                 📄 <a href="https://github.com/jrobbot/job-search-cvs/raw/master/mercury-senior-product-designer.pdf">CV</a>
                 📝 <a href="https://github.com/jrobbot/job-search-cvs/blob/master/answers-mercury.md">Answers</a>
-                <a class="btn btn-small btn-secondary" href="https://job-boards.greenhouse.io/monzo/jobs/7622277">Apply</a>
+            </div>
+            <div class="btn-group">
+                <a class="btn btn-secondary" href="https://job-boards.greenhouse.io/monzo/jobs/7622277">Apply</a>
             </div>
         </div>
         
@@ -86,14 +92,19 @@
             <div class="job-header">
                 <div>
                     <div class="job-company">Prolific</div>
-                    <div class="job-role">Lead Product Designer • Assessment/AI</div>
+                    <div class="job-role">Lead Product Designer</div>
                 </div>
-                <span class="grade-a">A</span>
+                <span class="grade-a">A (83%)</span>
             </div>
+            <div class="job-salary">Competitive</div>
+            <span class="tag">AI/Research</span> <span class="tag">Assessment</span>
+            <div class="match-reason">⭐ AI research + assessment experience</div>
             <div class="link-row">
                 📄 <a href="https://github.com/jrobbot/job-search-cvs/raw/master/metabase-product-designer.pdf">CV</a>
                 📝 <a href="https://github.com/jrobbot/job-search-cvs/blob/master/answers-metabase.md">Answers</a>
-                <a class="btn btn-small btn-secondary" href="https://job-boards.greenhouse.io/prolific/jobs/4831281101">Apply</a>
+            </div>
+            <div class="btn-group">
+                <a class="btn btn-secondary" href="https://job-boards.greenhouse.io/prolific/jobs/4831281101">Apply</a>
             </div>
         </div>
         
@@ -101,12 +112,15 @@
             <div class="job-header">
                 <div>
                     <div class="job-company">Qonto</div>
-                    <div class="job-role">Senior Product Designer (UX/UI) • Fintech</div>
+                    <div class="job-role">Senior Product Designer (UX/UI)</div>
                 </div>
-                <span class="grade-a">A</span>
+                <span class="grade-a">A (80%)</span>
             </div>
+            <div class="job-salary">Fintech Leader</div>
+            <span class="tag">Fintech</span> <span class="tag">Remote Friendly</span>
+            <div class="match-reason">⭐ Fintech + Design Systems</div>
             <div class="btn-group">
-                <a class="btn btn-small btn-secondary" href="https://jobs.lever.co/qonto/1c86929a-a325-47ac-acca-890a0524d8dd">Apply</a>
+                <a class="btn btn-secondary" href="https://jobs.lever.co/qonto/1c86929a-a325-47ac-acca-890a0524d8dd">Apply</a>
             </div>
         </div>
         
@@ -114,12 +128,14 @@
             <div class="job-header">
                 <div>
                     <div class="job-company">Grafana Labs</div>
-                    <div class="job-role">Staff Product Designer • SaaS</div>
+                    <div class="job-role">Staff Product Designer, Datasources</div>
                 </div>
-                <span class="grade-a">A</span>
+                <span class="grade-a">A (78%)</span>
             </div>
+            <span class="tag">SaaS/Observability</span> <span class="tag">UK Remote</span>
+            <div class="match-reason">⭐ Enterprise SaaS, remote</div>
             <div class="btn-group">
-                <a class="btn btn-small btn-secondary" href="https://job-boards.greenhouse.io/grafanalabs/jobs/5830866004">Apply</a>
+                <a class="btn btn-secondary" href="https://job-boards.greenhouse.io/grafanalabs/jobs/5830866004">Apply</a>
             </div>
         </div>
 
@@ -129,12 +145,15 @@
             <div class="job-header">
                 <div>
                     <div class="job-company">Twinkl</div>
-                    <div class="job-role">Senior Product Designer • Learning Platform</div>
+                    <div class="job-role">Senior Product Designer</div>
                 </div>
-                <span class="grade-b">B</span>
+                <span class="grade-b">B (75%)</span>
             </div>
+            <div class="job-salary">33 days holiday</div>
+            <span class="tag">Learning Platform</span>
+            <div class="match-reason">⭐ Your exact background!</div>
             <div class="btn-group">
-                <a class="btn btn-small btn-secondary" href="https://job-boards.greenhouse.io/twinkl/jobs/30968614">Apply</a>
+                <a class="btn btn-secondary" href="https://job-boards.greenhouse.io/twinkl/jobs/30968614">Apply</a>
             </div>
         </div>
         
@@ -142,117 +161,80 @@
             <div class="job-header">
                 <div>
                     <div class="job-company">Immersive Labs</div>
-                    <div class="job-role">Senior Product Designer • Assessment</div>
+                    <div class="job-role">Senior Product Designer (UK Remote)</div>
                 </div>
-                <span class="grade-b">B</span>
+                <span class="grade-b">B (73%)</span>
             </div>
+            <span class="tag">Assessment/Cybersecurity</span>
+            <div class="match-reason">⭐ Assessment platform experience</div>
             <div class="btn-group">
-                <a class="btn btn-small btn-secondary" href="https://jobs.ashbyhq.com/immersivelabs/a0a91b20-c6f5-4b81-ac89-74d3524a3d4a/application">Apply</a>
+                <a class="btn btn-secondary" href="https://jobs.ashbyhq.com/immersivelabs/a0a91b20-c6f5-4b81-ac89-74d3524a3d4a/application">Apply</a>
             </div>
         </div>
+        
+        <div class="job-card">
+            <div class="job-header">
+                <div>
+                    <div class="job-company">Red Badger</div>
+                    <div class="job-role">Senior Product Designer</div>
+                </div>
+                <span class="grade-b">B (70%)</span>
+            </div>
+            <span class="tag">Digital Agency</span> <span class="tag">UK Remote</span>
+            <div class="match-reason">✓ Enterprise experience</div>
+            <div class="btn-group">
+                <a class="btn btn-secondary" href="https://boards.greenhouse.io/redbadger/jobs/4973075003">Apply</a>
+            </div>
+        </div>
+        
+        <div class="job-card">
+            <div class="job-header">
+                <div>
+                    <div class="job-company">Fueled</div>
+                    <div class="job-role">Lead Product Designer</div>
+                </div>
+                <span class="grade-b">B (68%)</span>
+            </div>
+            <span class="tag">Digital Agency</span> <span class="tag">Remote</span>
+            <div class="match-reason">✓ Design agency experience</div>
+            <div class="btn-group">
+                <a class="btn btn-secondary" href="https://job-boards.greenhouse.io/fueledcareers/jobs/5060857008">Apply</a>
+            </div>
+        </div>
+
+        <h2>🟡 More Jobs (2)</h2>
         
         <div class="job-card">
             <div class="job-header">
                 <div>
                     <div class="job-company">n8n</div>
-                    <div class="job-role">Senior Product Designer • SaaS</div>
+                    <div class="job-role">Senior Product Designer</div>
                 </div>
-                <span class="grade-b">B</span>
+                <span class="grade-b">B (65%)</span>
             </div>
+            <span class="tag">SaaS/Automation</span>
             <div class="btn-group">
-                <a class="btn btn-small" href="https://jobs.ashbyhq.com/n8n">Apply</a>
+                <a class="btn" href="https://jobs.ashbyhq.com/n8n">Apply</a>
             </div>
         </div>
         
         <div class="job-card">
             <div class="job-header">
                 <div>
-                    <div class="job-company">Remote</div>
-                    <div class="job-role">Staff Product Designer • HR/Payroll</div>
+                    <div class="job-company">PadSplit</div>
+                    <div class="job-role">Senior Product Designer</div>
                 </div>
-                <span class="grade-b">B</span>
+                <span class="grade-b">B (62%)</span>
             </div>
+            <span class="tag">Fintech</span> <span class="tag">Fully Remote</span>
             <div class="btn-group">
-                <a class="btn btn-small" href="https://job-boards.greenhouse.io/remotecom/jobs/7564657003">Apply</a>
+                <a class="btn" href="https://jobs.lever.co/padsplit/82ea697a-ffad-404f-b1a5-af1922a425f3">Apply</a>
             </div>
-        </div>
-
-        <h2>🟡 More Jobs (9)</h2>
-        
-        <div class="job-card">
-            <div class="job-header">
-                <div><div class="job-company">Mercury</div><div class="job-role">Senior Product Designer – Mobile</div></div>
-                <span class="grade-c">C</span>
-            </div>
-            <div class="btn-group"><a class="btn btn-small" href="https://job-boards.greenhouse.io/mercury/jobs/5843845004">Apply</a></div>
-        </div>
-        
-        <div class="job-card">
-            <div class="job-header">
-                <div><div class="job-company">Red Badger</div><div class="job-role">Senior Product Designer • UK Remote</div></div>
-                <span class="grade-c">C</span>
-            </div>
-            <div class="btn-group"><a class="btn btn-small" href="https://boards.greenhouse.io/redbadger/jobs/4973075003">Apply</a></div>
-        </div>
-        
-        <div class="job-card">
-            <div class="job-header">
-                <div><div class="job-company">Fueled</div><div class="job-role">Lead Product Designer • Remote</div></div>
-                <span class="grade-c">C</span>
-            </div>
-            <div class="btn-group"><a class="btn btn-small" href="https://job-boards.greenhouse.io/fueledcareers/jobs/5060857008">Apply</a></div>
-        </div>
-        
-        <div class="job-card">
-            <div class="job-header">
-                <div><div class="job-company">PadSplit</div><div class="job-role">Senior Product Designer • Fintech</div></div>
-                <span class="grade-c">C</span>
-            </div>
-            <div class="btn-group"><a class="btn btn-small" href="https://jobs.lever.co/padsplit/82ea697a-ffad-404f-b1a5-af1922a425f3">Apply</a></div>
-        </div>
-        
-        <div class="job-card">
-            <div class="job-header">
-                <div><div class="job-company">Miro</div><div class="job-role">Senior Product Designer • Growth</div></div>
-                <span class="grade-c">Old</span>
-            </div>
-            <div class="btn-group"><a class="btn btn-small" href="https://boards.greenhouse.io/realtimeboardglobal/jobs/8102043002">Apply</a></div>
-        </div>
-        
-        <div class="job-card">
-            <div class="job-header">
-                <div><div class="job-company">Splice</div><div class="job-role">Senior Product Designer • Music Tech</div></div>
-                <span class="grade-c">Old</span>
-            </div>
-            <div class="btn-group"><a class="btn btn-small" href="https://job-boards.greenhouse.io/splice/jobs/8112847002">Apply</a></div>
-        </div>
-        
-        <div class="job-card">
-            <div class="job-header">
-                <div><div class="job-company">Jobgether</div><div class="job-role">Multiple roles • HR Platform</div></div>
-                <span class="grade-c">C</span>
-            </div>
-            <div class="btn-group"><a class="btn btn-small" href="https://jobs.lever.co/jobgether">View</a></div>
-        </div>
-        
-        <div class="job-card">
-            <div class="job-header">
-                <div><div class="job-company">ezCater</div><div class="job-role">Senior Product Designer • Food Tech</div></div>
-                <span class="grade-c">C</span>
-            </div>
-            <div class="btn-group"><a class="btn btn-small" href="https://job-boards.greenhouse.io/ezcaterinc/jobs/5022839007">Apply</a></div>
-        </div>
-        
-        <div class="job-card">
-            <div class="job-header">
-                <div><div class="job-company">Check</div><div class="job-role">Senior Product Designer • Payroll</div></div>
-                <span class="grade-c">C</span>
-            </div>
-            <div class="btn-group"><a class="btn btn-small" href="https://job-boards.greenhouse.io/check/jobs/5825315004">Apply</a></div>
         </div>
 
         <p class="small" style="text-align: center; margin-top: 30px;">
-            📂 <a href="https://github.com/jrobbot/job-search-cvs">GitHub Repo</a> — CVs & Answers
+            📂 <a href="https://github.com/jrobbot/job-search-cvs" style="color:#0066cc;">Private GitHub Repo</a> — All CVs & Answers<br>
+            Updated: Apr 8, 2026
         </p>
     </div>
 </body>
